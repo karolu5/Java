@@ -24,41 +24,29 @@ public class CalculatorMethods {
             switch (option) {
 
                 case 1:
-                    System.out.print("Enter first number: ");
-                    a = scanner.nextDouble();
-
-                    System.out.print("Enter second number: ");
-                    b = scanner.nextDouble();
+                    a = readNumber(scanner, "Enter first number: ");
+                    b = readNumber(scanner, "Enter second number: ");
 
                     System.out.println("Result: " + add(a, b));
                     break;
 
                 case 2:
-                    System.out.print("Enter first number: ");
-                    a = scanner.nextDouble();
-
-                    System.out.print("Enter second number: ");
-                    b = scanner.nextDouble();
+                    a = readNumber(scanner, "Enter first number: ");
+                    b = readNumber(scanner, "Enter second number: ");
 
                     System.out.println("Result: " + subtract(a, b));
                     break;
 
                 case 3:
-                    System.out.print("Enter first number: ");
-                    a = scanner.nextDouble();
-
-                    System.out.print("Enter second number: ");
-                    b = scanner.nextDouble();
+                    a = readNumber(scanner, "Enter first number: ");
+                    b = readNumber(scanner, "Enter second number: ");
 
                     System.out.println("Result: " + multiply(a, b));
                     break;
 
                 case 4:
-                    System.out.print("Enter first number: ");
-                    a = scanner.nextDouble();
-
-                    System.out.print("Enter second number: ");
-                    b = scanner.nextDouble();
+                    a = readNumber(scanner, "Enter first number: ");
+                    b = readNumber(scanner, "Enter second number: ");
 
                     if (b == 0) {
                         System.out.println("Error: Cannot divide by zero.");
@@ -96,5 +84,9 @@ public class CalculatorMethods {
         return a / b;
     }
 
-}
+    public static double readNumber(Scanner scanner, String message) {
+        System.out.print(message);
+        return scanner.nextDouble();
+    }
 
+}
