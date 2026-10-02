@@ -1,28 +1,28 @@
 public class StudentGrades {
     public static void main(String[] args){
 
-        double[] grades = {5.5, 10.0, 3.0, 7.5, 6.0, 9.0, 4.5};
+        double[] grades = {8.5, 9.0, 7.5, 10.0, 6.5, 8.0};
         double sum = 0;
         double highest = grades[0];
         double lowest = grades[0];
         int failed = 0;
         int passed = 0;
 
-        for(int i = 0; i < grades.length; i++){
+        for(double grade : grades){
 
-            sum = sum + grades[i];
+            sum = sum + grade;
 
-            if(grades[i] < 6){
+            if(grade < 6){
                 failed++;
             }else{
                 passed++;
             }
 
-            if(grades[i] > highest){
-                highest = grades[i];
+            if(grade > highest){
+                highest = grade;
             }
-            if(grades[i] < lowest){
-                lowest = grades[i];
+            if(grade < lowest){
+                lowest = grade;
             }
 
         }
