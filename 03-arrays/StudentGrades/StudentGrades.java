@@ -10,7 +10,7 @@ public class StudentGrades {
 
         for(double grade : grades){
 
-            sum = sum + grade;
+            sum += grade;
 
             if(grade < 6){
                 failed++;
@@ -35,5 +35,6 @@ public class StudentGrades {
     System.out.println("Lowest grade: " + lowest);
     System.out.println("Passed: " + passed);
     System.out.println("Failed: " + failed);
+    
     }
 }
