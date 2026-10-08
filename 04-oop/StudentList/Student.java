@@ -31,6 +31,12 @@ public class Student {
         System.out.println("Age: "+ getAge());
         System.out.println("Grade: " + getGrade());
         System.out.println("Passed: " + hasPassed());
+
+        /*=== Student Information ===
+            Name: Jose
+            Age: 44
+            Grade: 4.0
+            Passed: false */
     }
 
     public void setName(String name) {
